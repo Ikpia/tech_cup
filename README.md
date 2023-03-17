@@ -1,6 +1,7 @@
 TECH CUP
 
- Tech cup is a web application that helps connect tech tutors to tech enthusiasts or people interested in thech but do not have an experienced tutor guiding them through
+ Tech cup is a web application that helps connect tech tutors to tech enthusiasts or people interested in thech but do not have an experienced tutor guiding them through and also help experinced developers interested in monetizing their skill by tutoring people that are new to tech
+
 ## Features
     
  - A landing page for Users(Tech tutors) to sign up
