@@ -134,8 +134,8 @@ app.post('/payment', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'http://localhost:3000/success',
-      cancel_url: 'http://localhost:3000/cancel',
+      success_url: 'https://fine-teal-chicken-tie.cyclic.app/success',
+      cancel_url: 'https://fine-teal-chicken-tie.cyclic.app/cancel',
       customer_email: Email
       
     });
