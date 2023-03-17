@@ -44,16 +44,19 @@ app.get('/admin', async (req, res) => {
         const filter = {email:inputedEmail};
         const update = {payments:'payed'};
         const payedUsers =  await SignUp.findOneAndUpdate(filter, update, {new:true});
+        
         try{
+            if (payedUsers === null) {
+                res.render('pages/admin',{users:users, number:number, reply:reply, inputedName:inputedName, package:package})
+            } else {
             inputedName = payedUsers.name;
             console.log(payedUsers)
+            res.render('pages/admin',{users:users, number:number, reply:reply, inputedName:inputedName, package:package})
+            }
+            
         } catch(err) {
             console.log(err)
         }
-       
-        
-    
-    res.render('pages/admin',{users:users, number:number, reply:reply, inputedName:inputedName, package:package})
 })
 
 app.get('/sign_up', (req, res) => {
